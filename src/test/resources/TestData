@@ -1,0 +1,26 @@
+{
+  findAllByAuthor(author: "N/D") {
+    id
+    bookName
+    genre
+    authorName
+  }
+}
+
+{
+  findAllBooks {
+    id
+    bookName
+    genre
+    authorName
+  }
+}
+
+mutation {
+  createBook(
+    bookInput: {bookName: "Сказка о Царе Салтане", genre: "N/D", authorName: "N/D"}
+  ) {
+    id
+    bookName
+  }
+}
